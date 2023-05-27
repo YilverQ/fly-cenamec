@@ -3,7 +3,7 @@
 
 @section('title', 'Administrador')
 @section('styles')
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/components/form.css') }}">
+	<link rel="stylesheet" type="text/css" href="css/components/form.css">
 @endsection
 
 
@@ -46,6 +46,6 @@
 
 
 @section('scripts')
-	<script type="module" src="{{ asset('js/form/formEye.js') }}"></script>
-	<script type="module" src="{{ asset('js/login/checkFormAdmin.js') }}"></script>
+	<script type="module" src="js/form/formEye.js"></script>
+	<script type="module" src="js/login/checkFormAdmin.js"></script>
 @endsection

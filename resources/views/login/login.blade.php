@@ -3,7 +3,7 @@
 
 @section('title', 'Ingreso')
 @section('styles')
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/components/form.css') }}">
+	<link rel="stylesheet" type="text/css" href="css/components/form.css">
 @endsection
 
 
@@ -62,8 +62,8 @@
 
 
 @section('scripts')
-	<script type="module" src="{{ asset('js/form/formEye.js') }}"></script>
-	<script type="module" src="{{ asset('js/login/switchField.js') }}"></script>
-	<script type="module" src="{{ asset('js/login/checkFormLogin.js') }}"></script>
-	<script type="module" src="{{ asset('js/login/roleButtonSelect.js') }}"></script>
+	<script type="module" src="js/form/formEye.js"></script>
+	<script type="module" src="js/login/switchField.js"></script>
+	<script type="module" src="js/login/checkFormLogin.js"></script>
+	<script type="module" src="js/login/roleButtonSelect.js"></script>
 @endsection
