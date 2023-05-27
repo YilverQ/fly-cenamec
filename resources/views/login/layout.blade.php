@@ -9,10 +9,10 @@
 	<title>@yield('title') - CENAMEC</title>
 
 	<!--Estilos-->
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/components/nav.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/components/message.css') }}">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/components/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/components/message.css">
 	@yield('styles')
 
 	<!--Favicon-->
