@@ -1,0 +1,296 @@
+.containerCourses{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: 20px;
+	row-gap: 20px;
+	margin-top: 30px;
+}
+.cardCourse{
+	background: var(--light);
+	border-radius: 2px;
+	display: grid;
+	grid-template-areas: 
+	"img img"
+	"title title"
+	"info boxButtoms";
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	width: 400px;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+
+.cardCourse__img{
+	display: block;
+	object-fit: cover;
+	width: 400px;
+	height: 200px;
+	grid-area: img;
+	border-radius: 5px 5px 0 0;
+}
+.cardCourse__title{
+	grid-area: title;
+	margin-left: 20px;
+	font-size: 18px;
+	width: 100%;
+	margin-top: 10px;
+}
+.cardCourse__info{
+	grid-area: info;
+	margin-left: 20px;
+	color: var(--littleDark);
+}
+.list__actions{
+	grid-area: boxButtoms;
+	width: 240px;
+}
+
+
+
+/*Detalles del curso*/
+.descriptionCard{
+	width: 90%;
+	margin: auto;
+	background: var(--light);
+	padding: 20px 0;
+	padding-left: 20px;
+	display: flex;
+	flex-flow: column;
+	row-gap: 20px;
+}
+.descriptionCard__nav{
+	display: flex;
+	column-gap: 20px;
+}
+
+.descriptionCard__item{
+	padding: 10px;
+	padding-bottom: 5px;
+	color: var(--littleDark);
+}
+.descriptionCard__item--checked{
+	color:var(--text);
+	border-bottom: 2px solid var(--primary);
+}
+
+.introduction{
+	text-align: justify;
+	max-width: 90%;
+	padding-left:30px;
+}
+
+.smallInformation{
+	max-width: 90%;
+	display: flex;
+	column-gap: 15px;
+	vertical-align: center;
+	align-items: center;
+}
+.smallInformation__title{
+	font-size: 14px;
+}
+
+
+/*Modules*/
+.containerModules{
+	display: flex;
+	flex-flow: column;
+	row-gap: 20px;
+	padding: 20px 0;
+	transition: all .5s;
+	animation: moverArriba .5s;
+}
+.containerModules--hidden{
+	display: none;
+	transition: all .5s;
+}
+.expandContent{
+	cursor: pointer;
+}
+.boxExpand{
+	cursor: pointer;
+}
+
+.cardModule{
+	display: grid;
+	grid-template-areas: 
+	"id title title title"
+	"id item1 item2 list";
+	background: var(--light);
+	margin: auto;
+	grid-column-gap: 40px;
+	align-items: center;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.cardModule__number{
+	grid-area: id;
+	font-weight: 700;
+	font-family: "roboto", sans-serif;
+	font-size: 20px;
+	padding: 10px;
+	color: var(--primary);
+}
+.cardModule__title{
+	grid-area: title;
+	font-size: 20px;
+}
+.cardModule__item{
+	color: var(--littleDark);
+}
+.cardModule__item--note{
+	grid-area: item1;
+}
+
+.cardModule__item--question{
+	grid-area: item2;
+}
+.list__actions--course{
+	grid-area: list;
+	width: 320px;
+}
+.bar{
+	margin: auto;
+	background: var(--littleDark);
+	width: 2px;
+	height: 30px;
+}
+
+/*BottonEnds*/
+.bottonEnd{
+	display: flex;
+	flex-flow: column;
+	gap: 5px;
+	margin-top: 16px;
+}
+
+
+/*Notes*/
+.cardNoteContent{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	margin: 30px 0;
+}
+.cardNote{
+	display: grid;
+	grid-template-areas: 
+	"numberNote titleNote"
+	"descriptionNote descriptionNote"
+	"actionButtonNote actionButtonNote";
+	background: var(--light);
+	width: 400px;
+	border-top: 3px solid var(--primary);
+	border-radius: 3px;
+	padding: 20px 10px;
+	row-gap: 20px;
+	position: relative;
+}
+.cardNote__content{
+	position: relative;
+	z-index: 1;
+	background: var(--light);
+	padding-right: 5px;
+}
+.cardNote__img{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	z-index: 0;
+}
+.cardNote__number{
+	grid-area: numberNote;
+	background: var(--primary);
+	color: white;
+	padding: 8px;
+	border-radius: 2px 0 0 2px;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 20px;
+}
+.cardNote__title{
+	font-size: 20px;
+	grid-area: titleNote;
+	display: inline-block;
+}
+.cardNote__description{
+	grid-area: descriptionNote;
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
+	font-weight: 700;
+}
+.list__actions--module{
+	grid-area: actionButtonNote;
+	width: 420px;
+}
+
+
+
+/*Question*/
+.cardQuestionContent{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	margin: 30px 0;
+}
+
+.cardQuestion{
+	display: flex;
+	flex-flow: column;
+	width: 420px;
+	background: var(--light);
+	border-top: 3px solid var(--primary);
+	border-radius: 3px;
+	padding: 20px 10px;
+	row-gap: 20px;
+}
+
+.cardQuestion__number{
+	background: var(--primary);
+	color: white;
+	padding: 8px;
+	border-radius: 2px 0 0 2px;
+	font-size: 20px;
+	display: inline;
+}
+.cardQuestion__contentMiniCard{
+	display: flex;
+}
+.cardQuestion__super-text{
+	font-size: 20px;
+	display: inline;
+	background: var(--tertiary);
+	color: white;
+	padding: 8px;
+	border-radius: 0 2px 2px 0;
+}
+.cardQuestion__ask{
+	font-size: 18px;
+	text-align: center;
+}
+.list__actions--question{
+	width: 100%;
+}
+.cardQuestion__contentAnswer{
+	display: flex;
+	flex-flow: column;
+	row-gap: 5px;
+}
+
+.cardQuestion__answer{
+	padding: 10px;
+	background: var(--littleDark);
+	border-radius: 2px;
+	color: var(--light);
+	font-weight: 700;
+}
+.cardQuestion__answer--true{
+	background: var(--success);
+}

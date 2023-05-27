@@ -1,0 +1,27 @@
+.message{
+    position: absolute;
+    font-weight: 300;
+    color: var(--light);
+    font-size: 1.1em;
+    padding: .7em .5em;
+    padding-left: 1em;
+    max-width: min(100%, calc(500px));
+    animation: moverIzquierda .5s;
+    z-index: 100;
+}
+.message--error{
+    background: var(--danger);
+}
+.message--success{
+    background: var(--success);
+}
+.message--warning{
+    background: var(--danger);
+}
+.close-message{
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
